@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class PatternCounterUtils {
     
-    public static Map<String, ?> getWordCounts(ArrayList<String> content){
+    public static Map<String, ?> getWordCounts(ArrayList<String> content) {
         ArrayList<String> words = (ArrayList<String>) content.stream()
                 .collect(Collectors.toList());
         words.removeIf(e -> (isNumeric(e)));
@@ -29,7 +29,7 @@ public class PatternCounterUtils {
         return result;
     }
 
-    public static HashMap<String, Integer> getPhraseCounts(ArrayList<String> content) throws Exception{
+    public static HashMap<String, Integer> getPhraseCounts(ArrayList<String> content) {
         System.out.println("test 3"+content);
 
         ArrayList<String> lowercaseStrings = (ArrayList<String>) content.stream()
@@ -44,7 +44,7 @@ public class PatternCounterUtils {
         return counts;
     }
 
-    public static HashMap<String, Map<String, ?>> getAllPattern(ArrayList<String> content) throws Exception {
+    public static HashMap<String, Map<String, ?>> getAllPattern(ArrayList<String> content) {
         HashMap<String, Map<String, ?>> notificationItem = new HashMap<>();
         notificationItem.put("WORD COUNTS", getWordCounts(content));
         notificationItem.put("NUMERIC COUNTS", getNumberCounts(content));
@@ -52,12 +52,10 @@ public class PatternCounterUtils {
         return notificationItem;
     }
 
-
     /**
      * @param str input to check
      * @return if value is numeric or not in Boolean
      */
-
     public static boolean isNumeric(String str) {
         try {
             Double.parseDouble(str);

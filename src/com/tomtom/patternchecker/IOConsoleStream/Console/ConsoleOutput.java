@@ -25,13 +25,10 @@ public class ConsoleOutput implements IOutputStream {
 				} else {
 					System.out.println(entry.getKey() + ", " + entry.getValue() + "\n");
 				}
-
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 
 }

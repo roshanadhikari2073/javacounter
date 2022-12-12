@@ -20,7 +20,7 @@ public class IOStream {
 		this.inputStream = inputStream;
 		this.outputStream = outputStream;
 	}
-	
+
 	/**
 	 * function to get the user inputs with given standard input specified
 	 * @return ArrayList user inputs
@@ -34,8 +34,8 @@ public class IOStream {
 	}
 
 	/**
-	 * function to print the output 
-	 * @param result
+	 * function to print the output
+	 * @param result has the processed data
 	 */
 	public void computeOutput(Map<String, ?> result) {
 		if (this.outputStream != null) {

@@ -1,7 +1,6 @@
 package com.tomtom.patternchecker.IOConsoleStream.IOStream;
 
 import java.util.Map;
-
 /**
  * Output Interface
  */
