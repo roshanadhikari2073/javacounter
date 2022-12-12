@@ -83,17 +83,4 @@ public class PatternCounterUtils {
         reader.close();
         return words;
     }
-
-    public static void consolePrintMap(Map<String, ?> result) {
-        for (Map.Entry<String, ?> entry : result.entrySet()) {
-            String key = entry.getKey();
-            Object value = entry.getValue();
-            if ((key != null) && (value == null)) {
-                System.out.println(key + "\n");
-            } else {
-                System.out.println(key + ", " + value+"\n");
-            }
-        }
-
-    }
 }

@@ -8,7 +8,7 @@ public class ConsoleOutput implements IOutputStream {
 
 	@Override
 	public void computeOutput(Map<String, ?> value) {
-		if (value.isEmpty()) {
+		if (!value.isEmpty()) {
 			processResults(value);
 		}
 	}

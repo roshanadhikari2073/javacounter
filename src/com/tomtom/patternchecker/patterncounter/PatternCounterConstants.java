@@ -2,7 +2,6 @@ package com.tomtom.patternchecker.patterncounter;
 
 public class PatternCounterConstants {
 
-    public static final String PC_FUNCTION = "patternCounter";
     public static final int WORD_COUNTER = 1;
     public static final int INT_COUNTER = 2;
     public static final int PHRASE_COUNTER = 3;
