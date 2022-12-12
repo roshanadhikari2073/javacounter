@@ -14,7 +14,7 @@ public class PatternCounterUtils {
     
     public static Map<String, ?> getWordCounts(ArrayList<String> content){
         ArrayList<String> words = (ArrayList<String>) content.stream()
-                .collect(Collectors.toList());;
+                .collect(Collectors.toList());
         words.removeIf(e -> (isNumeric(e)));
         Map<String, Long> result = words.stream().map(String::toLowerCase)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));

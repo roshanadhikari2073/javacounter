@@ -29,7 +29,7 @@ public class IOStream {
 		if (this.inputStream != null) {
 			return this.inputStream.promptForInput();
 		} else {
-			return new ArrayList<String>();
+			return new ArrayList<>();
 		}
 	}
 
