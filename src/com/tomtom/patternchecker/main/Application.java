@@ -5,7 +5,6 @@ import com.tomtom.patternchecker.patterncounter.counter.impl.PatternCounterImpl;
 public class Application {
 	private static final PatternCounterImpl counter = new PatternCounterImpl();
 
-	// ---  /Users/roshanadhikari/Desktop/test.txt
 	public static void main(String[] args) {
 		counter.run();
 }

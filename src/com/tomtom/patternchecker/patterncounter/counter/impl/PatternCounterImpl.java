@@ -13,7 +13,6 @@ import java.util.Map;
 
 import static com.tomtom.patternchecker.patterncounter.PatternCounterConstants.IS_EMPTY;
 
-
 public class PatternCounterImpl implements IPatternCounter {
 
     public void run() {
